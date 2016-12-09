@@ -2,7 +2,7 @@ defmodule ElixirSensors.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", ElixirSensors.RoomChannel
+  channel "sensor_event:*", ElixirSensors.SensorEventsChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket

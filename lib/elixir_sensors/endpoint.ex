@@ -38,5 +38,6 @@ defmodule ElixirSensors.Endpoint do
     key: "_elixir_sensors_key",
     signing_salt: "Jnsk83Nj"
 
+  plug CORSPlug
   plug ElixirSensors.Router
 end
